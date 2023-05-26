@@ -11,7 +11,7 @@ Themes I've customized for Oh My ZSH
 ### How to install:
 
 ```bash
-$ git clone https://github.com/CodeWitchJosie/omz-themes.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/
+$ (cd ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/ && curl --remote-name https://github.com/CodeWitchJosie/omz-themes/raw/main/josie.zsh-theme)
 ```
 
 ### How to use:
@@ -22,6 +22,6 @@ $ git clone https://github.com/CodeWitchJosie/omz-themes.git ${ZSH_CUSTOM:-~/.oh
 For convenience:
 
 ```bash
-$ sed -i 's/ZSH_THEME=.*/ZSH_THEME="josie"/' ~/.zshrc
+$ sed -i -e 's/^ZSH_THEME=.*/ZSH_THEME="josie"/' ~/.zshrc
 $ exec zsh
 ```
